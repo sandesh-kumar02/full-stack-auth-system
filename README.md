@@ -28,4 +28,4 @@ This project demonstrates secure user authentication, profile picture upload, an
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/fullstack-auth-system.git
+git clone https://github.com/sandesh-kumar/fullstack-auth-system.git
