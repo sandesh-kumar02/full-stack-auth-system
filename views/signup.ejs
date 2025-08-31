@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>Signup</h2>
+      <form action="/signup" method="POST">
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your username"
+          autofocus
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <input type="email" name="email" placeholder="Enter your email" />
+        <button type="submit">Signup</button>
+      </form>
+
+      <% if (error_msg && error_msg.length > 0) { %>
+      <div class="flash-message flash-error"><%= error_msg %></div>
+      <% } %>
+      <div>
+        <p>you have already an Account? <a href="/login">Login</a></p>
+      </div>
+    </div>
+  </body>
+</html>
